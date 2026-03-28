@@ -1,6 +1,8 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 
+process.env.NEXTAUTH_URL = 'https://timeblock-wine.vercel.app'
+
 const handler = NextAuth({
   providers: [
     GoogleProvider({
